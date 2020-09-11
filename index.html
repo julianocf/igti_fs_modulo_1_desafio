@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Desafio do módulo 1</title>
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Pesquisa de usuários</h1>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="input-field col s11">
+                        <input
+                            id="filterTermInput"
+                            type="text"
+                            placeholder="Informe um nome para pesquisar"
+                        />
+                        <label class="active" for="filterTermInput"
+                            >Busca</label
+                        >
+                    </div>
+                    <div class="input-field col s1">
+                        <button
+                            class="waves-effect waves-light btn s2"
+                            id="filterTermSubmit"
+                        >
+                            Buscar
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s6">
+                        <div class="filtered-users" id="filtered-users">
+                            <p>Nenhum usuário filtrado</p>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="statistics" id="statistics">
+                            <p>Nada a ser exibido</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="copyright-text">
+                ©Copyright 2020 by Juliano Canova Frugoli. Bootcamp IGTI
+            </p>
+        </footer>
+        <script src="./js/users.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>
